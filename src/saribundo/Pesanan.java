@@ -65,12 +65,12 @@ public class Pesanan {
             writer.println();
 
             for (MenuItem item : itemPesanan) {
-                writer.printf("%-25s Rp%,10.2f%n", item.getNama(), item.getHarga());
+                writer.printf("%-25s Rp%,.0f%n", item.getNama(), item.getHarga());
             }
 
             writer.println();
             writer.println("------------------------------------");
-            writer.printf("%-25s Rp%,10.2f%n", "Total", hitungTotalBiaya());
+            writer.printf("%-25s Rp%,.0f%n", "Total", hitungTotalBiaya());
             writer.println("------------------------------------");
             writer.println("--------- TERIMAKASIH SUDAH --------");
             writer.println("------------ BERBELANJA ------------");

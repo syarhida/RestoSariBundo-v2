@@ -101,7 +101,7 @@ public class ManajemenRestoran {
 
         while (!selesaiPesan) {
             menu.tampilkanMenu();
-            System.out.print("Masukkan nama item yang ingin dipesan (atau 'selesai' untuk mengakhiri): ");
+            System.out.print("\nMasukkan Pesanan Anda: ");
             String nama = scanner.nextLine();
 
             if (nama.equalsIgnoreCase("selesai")) {
@@ -121,10 +121,10 @@ public class ManajemenRestoran {
         if (!pesanan.getItemPesanan().isEmpty()) {
             pesanan.tampilkanStruk();
 
-            System.out.print("Apakah Anda ingin menyimpan struk pesanan? (ya/tidak): ");
+            System.out.print("Apakah Anda ingin menyimpan struk pesanan? (y/t): ");
             String simpanStruk = scanner.nextLine();
 
-            if (simpanStruk.equalsIgnoreCase("ya")) {
+            if (simpanStruk.equalsIgnoreCase("y")) {
                 System.out.print("Masukkan nama file untuk struk pesanan: ");
                 String namaFile = scanner.nextLine();
                 pesanan.simpanStrukKeFile(namaFile);
