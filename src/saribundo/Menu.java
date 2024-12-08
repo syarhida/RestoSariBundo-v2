@@ -38,17 +38,17 @@ public class Menu {
             for (MenuItem item : daftarMenu) {
                 if (item instanceof Makanan) {
                     Makanan makanan = (Makanan) item;
-                    writer.printf("Makanan,%s,%.2f,%s,%s%n",
+                    writer.printf("Makanan,%s,%.0f,%s,%s%n",
                             makanan.getNama(), makanan.getHarga(),
                             makanan.getKategori(), makanan.getJenisMakanan());
                 } else if (item instanceof Minuman) {
                     Minuman minuman = (Minuman) item;
-                    writer.printf("Minuman,%s,%.2f,%s,%s%n",
+                    writer.printf("Minuman,%s,%.0f,%s,%s%n",
                             minuman.getNama(), minuman.getHarga(),
                             minuman.getKategori(), minuman.getJenisMinuman());
                 } else if (item instanceof Diskon) {
                     Diskon diskon = (Diskon) item;
-                    writer.printf("Diskon,%s,%.2f,%s,%.2f%n",
+                    writer.printf("Diskon,%s,%.0f,%s,%.0f%n",
                             diskon.getNama(), diskon.getHarga(),
                             diskon.getKategori(), diskon.getPersentaseDiskon());
                 }
